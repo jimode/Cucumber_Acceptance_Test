@@ -1,0 +1,5 @@
+<% common = "-r lib -r features" %>
+default: -p wip
+unit: --format progress <%= common %>
+html: --format html -o cucumber.html <%= common %>
+wip: --tags @wip --wip
